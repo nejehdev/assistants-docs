@@ -11,6 +11,7 @@ theme: SoftUI({
     },
     success: {
       login: String,
+      logout: String,
     },
   },
 });
@@ -26,6 +27,7 @@ theme: SoftUI({
     },
     success: {
       login: "Successfully logged in.",
+      logout: "Successfully logged out.",
     },
   },
 });
@@ -49,6 +51,9 @@ theme: SoftUI({
   <Expandable title="properties" defaultOpen>
     <ResponseField name="login" type="string" required>
       The success message for logged in users
+    </ResponseField>
+    <ResponseField name="logout" type="string">
+      The success message for logged out users
     </ResponseField>
   </Expandable>
 </ResponseField>
